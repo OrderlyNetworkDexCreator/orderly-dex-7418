@@ -23,7 +23,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_ENABLE_SERVICE_DISCLAIMER_DIALOG": "false",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "http://169.254.169.254/latest/meta-data/",
-  "VITE_DISCORD_URL": "",
+  "VITE_DISCORD_URL": "http://metadata.google.internal/computeMetadata/v1/",
   "VITE_TWITTER_URL": "",
   "VITE_SEO_SITE_NAME": "",
   "VITE_SEO_SITE_DESCRIPTION": "",
